@@ -16,6 +16,7 @@ eggs/
 .eggs/
 lib/
 lib64/
+lightning_logs/
 parts/
 sdist/
 var/

@@ -1,0 +1,29 @@
+--index-url https://download.pytorch.org/whl/nightly/cu128
+torch 
+torchvision 
+
+# Switch to default PyPI for other packages
+--index-url https://pypi.org/simple
+tensorboard
+seaborn==0.12.1 #0.12.2 has heatmap anntoation bug that hides text
+pandas==1.5.2
+scikit-learn==1.5.2
+matplotlib==3.7.0 #to allow for heatmap proper display
+scipy
+numpy<2
+# datetime is a built-in Python module, no need to install
+tqdm
+multiprocess 
+setuptools >=42
+dill >=0.3.9
+joblib
+pyarrow
+fastparquet>=0.4.0
+openpyxl
+scikit-image
+shapely
+lightning
+lightning[extra]
+packaging<25
+--extra-index-url https://pypi.ngc.nvidia.com
+nvidia-cuda-runtime-cu12
