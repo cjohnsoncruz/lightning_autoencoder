@@ -1,0 +1,81 @@
+,category_compared_within,group_1,group_2,group_1_n,group_2_n,group_1_mean,group_1_sem,group_2_mean,group_2_sem,test_name,stat_result,pvalue,categorical_subgroup,max_group_loc_val,numeric_var,hue_var,x_category_var,hue_is_x_axis,comparison
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",0.9584,0.202,0.8467,0.1824,cohen_d,[5.8024e-01 2.8088e-01 1.0000e-04],0.28087611378937627,"('WT VEH', 'WT CLNZ')",1.1937010050798174,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",0.9584,0.202,1.4846,0.473,cohen_d,[1.4468e+00 7.3980e-02 1.0000e-04],0.07397704102455882,"('WT VEH', 'Het VEH')",1.8098944862289494,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.4846,0.473,1.0114,0.2006,cohen_d,[1.30242e+00 9.63900e-02 1.00000e-04],0.09638641199030107,"('Het VEH', 'Het CLNZ')",1.8098944862289494,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",1.0114,0.2006,0.9027,0.1901,cohen_d,[5.5603e-01 2.8909e-01 1.0000e-04],0.28909446090765156,"('Het CLNZ', 'Het postCLNZ')",1.2419498026340028,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.4846,0.473,0.9027,0.1901,cohen_d,[1.61419e+00 5.32400e-02 1.00000e-04],0.05324347576965116,"('Het VEH', 'Het postCLNZ')",1.8098944862289494,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",0.6976,0.15,0.7016,0.1563,cohen_d,[0.02618 0.48956 0.56294],0.4895575754526664,"('WT VEH', 'WT CLNZ')",0.8768044357302023,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",0.6976,0.15,0.8266,0.1818,cohen_d,[7.7452e-01 2.1931e-01 1.0000e-04],0.2193108678545067,"('WT VEH', 'Het VEH')",1.0381416450127103,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",0.8266,0.1818,0.6627,0.1506,cohen_d,[9.8228e-01 1.6298e-01 1.0000e-04],0.16298142955361028,"('Het VEH', 'Het CLNZ')",1.0381416450127103,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",0.6627,0.1506,0.6264,0.1481,cohen_d,[2.4281e-01 4.0407e-01 1.0000e-04],0.4040746568110618,"('Het CLNZ', 'Het postCLNZ')",0.8299398039638354,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",0.8266,0.1818,0.6264,0.1481,cohen_d,[1.20765e+00 1.13590e-01 1.00000e-04],0.11359173077637275,"('Het VEH', 'Het postCLNZ')",1.0381416450127103,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",0.6999,0.1567,1.0097,0.2236,cohen_d,[1.60463e+00 5.42900e-02 1.00000e-04],0.054287877188456735,"('WT VEH', 'WT CLNZ')",1.2535920946546688,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",0.6999,0.1567,0.8463,0.1817,cohen_d,[8.6310e-01 1.9404e-01 1.0000e-04],0.1940403062873064,"('WT VEH', 'Het VEH')",1.0376534406501694,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",0.8463,0.1817,0.7922,0.1773,cohen_d,[3.0158e-01 3.8149e-01 1.0000e-04],0.3814854525280146,"('Het VEH', 'Het CLNZ')",1.0376534406501694,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",0.7922,0.1773,0.5688,0.1393,cohen_d,[1.40096e+00 8.06100e-02 1.00000e-04],0.0806123636863616,"('Het CLNZ', 'Het postCLNZ')",0.9910551148656123,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",0.8463,0.1817,0.5688,0.1393,cohen_d,[1.71451e+00 4.32200e-02 1.00000e-04],0.04321788341370725,"('Het VEH', 'Het postCLNZ')",1.0376534406501694,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",1.0446,0.2494,2.6155,3.7436,cohen_d,[5.9214e-01 2.7688e-01 1.0000e-04],0.2768769020366981,"('WT VEH', 'WT CLNZ')",3.3825010262848987,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",1.0446,0.2494,1.6332,0.468,cohen_d,[1.5696e+00 5.8250e-02 1.0000e-04],0.05825368489027416,"('WT VEH', 'Het VEH')",2.0110608735727276,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.6332,0.468,1.1724,0.2477,cohen_d,[1.23066e+00 1.09220e-01 1.00000e-04],0.10922491694325287,"('Het VEH', 'Het CLNZ')",2.0110608735727276,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",1.1724,0.2477,1.3569,0.2964,cohen_d,[6.7546e-01 2.4969e-01 1.0000e-04],0.2496914865765718,"('Het CLNZ', 'Het postCLNZ')",1.6594479585354673,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.6332,0.468,1.3569,0.2964,cohen_d,[7.0535e-01 2.4029e-01 1.0000e-04],0.24029473309851812,"('Het VEH', 'Het postCLNZ')",2.0110608735727276,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",1.0138,0.2236,0.9603,0.2116,cohen_d,[2.4564e-01 4.0298e-01 1.0000e-04],0.40298038768641264,"('WT VEH', 'WT CLNZ')",1.2791427701398355,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",1.0138,0.2236,1.171,0.2536,cohen_d,[6.5763e-01 2.5539e-01 1.0000e-04],0.255387702056184,"('WT VEH', 'Het VEH')",1.4660602060197179,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.171,0.2536,1.023,0.2149,cohen_d,[6.2971e-01 2.6444e-01 1.0000e-04],0.2644435677882948,"('Het VEH', 'Het CLNZ')",1.4660602060197179,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",1.023,0.2149,0.9822,0.2055,cohen_d,[1.9406e-01 4.2306e-01 1.0000e-04],0.4230627191957348,"('Het CLNZ', 'Het postCLNZ')",1.2682549603454283,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.171,0.2536,0.9822,0.2055,cohen_d,[8.1800e-01 2.0668e-01 1.0000e-04],0.20667920640399262,"('Het VEH', 'Het postCLNZ')",1.4660602060197179,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",1.2052,0.4856,1.432,1.2953,cohen_d,[0.23187 0.40832 0.0028 ],0.4083183639806164,"('WT VEH', 'WT CLNZ')",1.755921733886888,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",1.2052,0.4856,1.271,0.6826,cohen_d,[0.11116 0.45575 0.0385 ],0.45574599039733843,"('WT VEH', 'Het VEH')",1.5694343479130988,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.271,0.6826,0.9948,0.2208,cohen_d,[5.4465e-01 2.9300e-01 1.0000e-04],0.2929971707165323,"('Het VEH', 'Het CLNZ')",1.5694343479130988,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",0.9948,0.2208,1.1327,0.4165,cohen_d,[4.1378e-01 3.3952e-01 1.0000e-04],0.33951778619513895,"('Het CLNZ', 'Het postCLNZ')",1.3949993631630841,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.271,0.6826,1.1327,0.4165,cohen_d,[2.4470e-01 4.0335e-01 1.0000e-04],0.403345830961497,"('Het VEH', 'Het postCLNZ')",1.5694343479130988,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",1.1181,0.356,1.4357,0.8666,cohen_d,[4.7950e-01 3.1579e-01 1.0000e-04],0.3157916634591247,"('WT VEH', 'WT CLNZ')",1.72592637114466,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",1.1181,0.356,1.6367,2.1892,cohen_d,[0.33071 0.37043 0.0007 ],0.37043276807777625,"('WT VEH', 'Het VEH')",1.9926761433519724,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.6367,2.1892,1.7765,1.923,cohen_d,[0.06785 0.47295 0.17948],0.4729535862319978,"('Het VEH', 'Het CLNZ')",2.1264639802537655,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",1.7765,1.923,1.1356,0.6129,cohen_d,[4.4910e-01 3.2668e-01 1.0000e-04],0.32667991016983833,"('Het CLNZ', 'Het postCLNZ')",2.1264639802537655,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.6367,2.1892,1.1356,0.6129,cohen_d,[0.31175 0.37761 0.0009 ],0.37761441749529023,"('Het VEH', 'Het postCLNZ')",1.9926761433519724,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",0.8837,0.1915,0.6804,0.1588,cohen_d,[1.15552e+00 1.23940e-01 1.00000e-04],0.12393957239972664,"('WT VEH', 'WT CLNZ')",1.0806716560186809,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",0.8837,0.1915,0.83,0.184,cohen_d,[2.8601e-01 3.8743e-01 1.0000e-04],0.38743453676792206,"('WT VEH', 'Het VEH')",1.0806716560186809,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",0.83,0.184,0.7618,0.1738,cohen_d,[3.810e-01 3.516e-01 1.000e-04],0.3516025933038356,"('Het VEH', 'Het CLNZ')",1.0415608097425637,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",0.7618,0.1738,0.6676,0.1585,cohen_d,[5.6611e-01 2.8566e-01 1.0000e-04],0.28566003286529906,"('Het CLNZ', 'Het postCLNZ')",0.9453883211073641,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",0.83,0.184,0.6676,0.1585,cohen_d,[9.4554e-01 1.7219e-01 1.0000e-04],0.17219072252861312,"('Het VEH', 'Het postCLNZ')",1.0415608097425637,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"

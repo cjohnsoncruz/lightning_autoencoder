@@ -1,0 +1,81 @@
+,category_compared_within,group_1,group_2,group_1_n,group_2_n,group_1_mean,group_1_sem,group_2_mean,group_2_sem,test_name,stat_result,pvalue,categorical_subgroup,max_group_loc_val,numeric_var,hue_var,x_category_var,hue_is_x_axis,comparison
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",0.9584,0.0064,0.8467,0.0058,permutation_test,[0.11168 0.0002 ],0.00019998000199980003,"('WT VEH', 'WT CLNZ')",1.1937010050798174,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",0.9584,0.0064,1.4846,0.015,permutation_test,[-5.2619e-01  2.0000e-04],0.00019998000199980003,"('WT VEH', 'Het VEH')",1.8098944862289494,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.4846,0.015,1.0114,0.0063,permutation_test,[4.7319e-01 2.0000e-04],0.00019998000199980003,"('Het VEH', 'Het CLNZ')",1.8098944862289494,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",1.0114,0.0063,0.9027,0.006,permutation_test,[0.10867 0.0002 ],0.00019998000199980003,"('Het CLNZ', 'Het postCLNZ')",1.2419498026340028,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.4846,0.015,0.9027,0.006,permutation_test,[5.8187e-01 2.0000e-04],0.00019998000199980003,"('Het VEH', 'Het postCLNZ')",1.8098944862289494,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",0.6976,0.0047,0.7016,0.0049,permutation_test,[-0.00401  0.55454],0.5545445455454454,"('WT VEH', 'WT CLNZ')",0.8768044357302023,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",0.6976,0.0047,0.8266,0.0058,permutation_test,[-0.12909  0.0002 ],0.00019998000199980003,"('WT VEH', 'Het VEH')",1.0381416450127103,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",0.8266,0.0058,0.6627,0.0048,permutation_test,[0.16398 0.0002 ],0.00019998000199980003,"('Het VEH', 'Het CLNZ')",1.0381416450127103,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",0.6627,0.0048,0.6264,0.0047,permutation_test,[0.03626 0.0002 ],0.00019998000199980003,"('Het CLNZ', 'Het postCLNZ')",0.8299398039638354,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",0.8266,0.0058,0.6264,0.0047,permutation_test,[2.0024e-01 2.0000e-04],0.00019998000199980003,"('Het VEH', 'Het postCLNZ')",1.0381416450127103,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Early RS Correct latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",0.6999,0.005,1.0097,0.0071,permutation_test,[-3.0978e-01  2.0000e-04],0.00019998000199980003,"('WT VEH', 'WT CLNZ')",1.2535920946546688,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",0.6999,0.005,0.8463,0.0057,permutation_test,[-0.14643  0.0002 ],0.00019998000199980003,"('WT VEH', 'Het VEH')",1.0376534406501694,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",0.8463,0.0057,0.7922,0.0056,permutation_test,[0.05414 0.0002 ],0.00019998000199980003,"('Het VEH', 'Het CLNZ')",1.0376534406501694,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",0.7922,0.0056,0.5688,0.0044,permutation_test,[2.2338e-01 2.0000e-04],0.00019998000199980003,"('Het CLNZ', 'Het postCLNZ')",0.9910551148656123,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",0.8463,0.0057,0.5688,0.0044,permutation_test,[2.7752e-01 2.0000e-04],0.00019998000199980003,"('Het VEH', 'Het postCLNZ')",1.0376534406501694,DB_index,geno_day,geno_day,True,"Early IA Error ensemble:
+Early IA Error v Early RS Error latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",1.0446,0.0079,2.6155,0.1184,permutation_test,[-1.57094e+00  2.00000e-04],0.00019998000199980003,"('WT VEH', 'WT CLNZ')",3.3825010262848987,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",1.0446,0.0079,1.6332,0.0148,permutation_test,[-5.8858e-01  2.0000e-04],0.00019998000199980003,"('WT VEH', 'Het VEH')",2.0110608735727276,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.6332,0.0148,1.1724,0.0078,permutation_test,[4.6079e-01 2.0000e-04],0.00019998000199980003,"('Het VEH', 'Het CLNZ')",2.0110608735727276,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",1.1724,0.0078,1.3569,0.0094,permutation_test,[-0.1845  0.0002],0.00019998000199980003,"('Het CLNZ', 'Het postCLNZ')",1.6594479585354673,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.6332,0.0148,1.3569,0.0094,permutation_test,[2.7629e-01 2.0000e-04],0.00019998000199980003,"('Het VEH', 'Het postCLNZ')",2.0110608735727276,DB_index,geno_day,geno_day,True,"Early RS Error ensemble:
+Early IA Error v Early RS Error latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",1.0138,0.0071,0.9603,0.0067,permutation_test,[0.05348 0.0002 ],0.00019998000199980003,"('WT VEH', 'WT CLNZ')",1.2791427701398355,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",1.0138,0.0071,1.171,0.008,permutation_test,[-0.15722  0.0002 ],0.00019998000199980003,"('WT VEH', 'Het VEH')",1.4660602060197179,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.171,0.008,1.023,0.0068,permutation_test,[0.14799 0.0002 ],0.00019998000199980003,"('Het VEH', 'Het CLNZ')",1.4660602060197179,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",1.023,0.0068,0.9822,0.0065,permutation_test,[0.0408 0.0002],0.00019998000199980003,"('Het CLNZ', 'Het postCLNZ')",1.2682549603454283,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.171,0.008,0.9822,0.0065,permutation_test,[0.18879 0.0002 ],0.00019998000199980003,"('Het VEH', 'Het postCLNZ')",1.4660602060197179,DB_index,geno_day,geno_day,True,"Early RS Correct ensemble:
+Late IA v Early RS Correct latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",1.2052,0.0154,1.432,0.041,permutation_test,[-2.268e-01  2.000e-04],0.00019998000199980003,"('WT VEH', 'WT CLNZ')",1.755921733886888,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",1.2052,0.0154,1.271,0.0216,permutation_test,[-0.06584  0.0086 ],0.008599140085991401,"('WT VEH', 'Het VEH')",1.5694343479130988,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.271,0.0216,0.9948,0.007,permutation_test,[2.7629e-01 2.0000e-04],0.00019998000199980003,"('Het VEH', 'Het CLNZ')",1.5694343479130988,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",0.9948,0.007,1.1327,0.0132,permutation_test,[-0.13793  0.0002 ],0.00019998000199980003,"('Het CLNZ', 'Het postCLNZ')",1.3949993631630841,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.271,0.0216,1.1327,0.0132,permutation_test,[0.13836 0.0002 ],0.00019998000199980003,"('Het VEH', 'Het postCLNZ')",1.5694343479130988,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Late IA v Early RS Correct latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",1.1181,0.0113,1.4357,0.0274,permutation_test,[-3.1763e-01  2.0000e-04],0.00019998000199980003,"('WT VEH', 'WT CLNZ')",1.72592637114466,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",1.1181,0.0113,1.6367,0.0693,permutation_test,[-5.1865e-01  2.0000e-04],0.00019998000199980003,"('WT VEH', 'Het VEH')",1.9926761433519724,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",1.6367,0.0693,1.7765,0.0608,permutation_test,[-0.13979  0.14399],0.143985601439856,"('Het VEH', 'Het CLNZ')",2.1264639802537655,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",1.7765,0.0608,1.1356,0.0194,permutation_test,[6.4093e-01 2.0000e-04],0.00019998000199980003,"('Het CLNZ', 'Het postCLNZ')",2.1264639802537655,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",1.6367,0.0693,1.1356,0.0194,permutation_test,[5.0114e-01 2.0000e-04],0.00019998000199980003,"('Het VEH', 'Het postCLNZ')",1.9926761433519724,DB_index,geno_day,geno_day,True,"Late IA ensemble:
+Early IA Correct v Late IA latent space"
+0,geno_day,WT VEH,WT CLNZ,"(1000,)","(1000,)",0.8837,0.0061,0.6804,0.005,permutation_test,[2.0329e-01 2.0000e-04],0.00019998000199980003,"('WT VEH', 'WT CLNZ')",1.0806716560186809,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"
+1,geno_day,WT VEH,Het VEH,"(1000,)","(1000,)",0.8837,0.0061,0.83,0.0058,permutation_test,[0.05371 0.0002 ],0.00019998000199980003,"('WT VEH', 'Het VEH')",1.0806716560186809,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"
+2,geno_day,Het VEH,Het CLNZ,"(1000,)","(1000,)",0.83,0.0058,0.7618,0.0055,permutation_test,[0.06819 0.0002 ],0.00019998000199980003,"('Het VEH', 'Het CLNZ')",1.0415608097425637,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"
+3,geno_day,Het CLNZ,Het postCLNZ,"(1000,)","(1000,)",0.7618,0.0055,0.6676,0.005,permutation_test,[0.09416 0.0002 ],0.00019998000199980003,"('Het CLNZ', 'Het postCLNZ')",0.9453883211073641,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"
+4,geno_day,Het VEH,Het postCLNZ,"(1000,)","(1000,)",0.83,0.0058,0.6676,0.005,permutation_test,[0.16235 0.0002 ],0.00019998000199980003,"('Het VEH', 'Het postCLNZ')",1.0415608097425637,DB_index,geno_day,geno_day,True,"Early IA Correct ensemble:
+Early IA Correct v Late IA latent space"

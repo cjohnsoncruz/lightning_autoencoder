@@ -8,9 +8,11 @@ import matplotlib.pyplot as plt
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 import itertools
+import matplotlib
+import seaborn as sns
 from datetime import datetime
-# from scipy.spatial.distance import pdist, cdist
-
+from sns_plotting_config import *
+from ax_modifier_functions_cloud import *
 stage_col = 'task_phase_vec'
 
 # From helper_functions.py
@@ -264,7 +266,14 @@ def compute_dbi(group):
     dbi = davies_bouldin_score(X, y)
     return pd.Series({'Davies-Bouldin index': dbi})
 
-def plot_db_index_geno_dodge(plot_ax, comparison, ensemble_subset, score_df: pd.DataFrame,add_legend = False, ylim:list= None,**kwargs):
+def plot_db_index_geno_dodge(plot_ax, 
+                            comparison,
+                            ensemble_subset,
+                            score_df: pd.DataFrame,
+                            add_legend = False,
+                            ylim:list= None,
+                            score_type = 'DB_index',
+                            **kwargs):
     """
     Plots ensemble comparison using seaborn pointplot, annotates statistical significance, and appends posthoc results to a provided list.
     Dodges within geno 
@@ -279,7 +288,7 @@ def plot_db_index_geno_dodge(plot_ax, comparison, ensemble_subset, score_df: pd.
     Returns:
     - - posthoc_list (list): External list to store posthoc result DataFrames. 
     """
-    score_type = 'Davies-Bouldin index'
+    
     #default args
     fig_suptitle = f"{comparison.replace('_', ' ').replace(' v ', ' & ')}\n stage activity separation"
     if ylim is None:
