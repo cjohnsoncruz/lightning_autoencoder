@@ -56,6 +56,8 @@ cover/
 *.mo
 *.pot
 
+#torch model storage
+/torch_models/
 # Django stuff:
 *.log
 local_settings.py
