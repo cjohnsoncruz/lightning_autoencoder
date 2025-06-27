@@ -59,7 +59,9 @@ cover/
 #ignore figures etc 
 /output/
 #torch model storage
+/torch_model_*/
 /torch_models/
+
 # Django stuff:
 *.log
 local_settings.py
