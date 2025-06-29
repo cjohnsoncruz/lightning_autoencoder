@@ -77,8 +77,8 @@ def save_plot_record_as_csv_txt(posthoc_df:pd.DataFrame,
     if txt_suffix is not None:
         text_name = "_".join([folder_pref, fig_name , txt_suffix ,f"{date_tag}.txt"])
         #save as txt
-        write_posthoc_table_to_txt(posthoc_df,csv_folder_current_run+ text_name)
-        write_posthoc_table_to_txt(posthoc_df, csv_folder_most_recent + text_name)
+        write_posthoc_to_txt_clean(posthoc_df,csv_folder_current_run+ text_name)
+        write_posthoc_to_txt_clean(posthoc_df, csv_folder_most_recent + text_name)
     else:
         print("No text suffix provided, not saving text")
 
@@ -266,66 +266,7 @@ def compute_dbi(group):
     dbi = davies_bouldin_score(X, y)
     return pd.Series({'Davies-Bouldin index': dbi})
 
-def plot_db_index_geno_dodge(plot_ax, 
-                            comparison,
-                            ensemble_subset,
-                            score_df: pd.DataFrame,
-                            add_legend = False,
-                            ylim:list= None,
-                            score_type = 'DB_index',
-                            **kwargs):
-    """
-    Plots ensemble comparison using seaborn pointplot, annotates statistical significance, and appends posthoc results to a provided list.
-    Dodges within geno 
-    Parameters:
-    - ensemble_subset (list): List of ensemble identifiers to plot.
-    - score_df (pd.DataFrame): DataFrame containing the scores.
-    - comparison (str): Identifier for the comparison condition.
-    - color_list (list): Colors for plotting.
-    - geno_order (list): Order of genotypes for consistent plotting.
-    - ax_array (array-like): Array of matplotlib axes to use for subplots.
-    - preset_comparison_list (list): Pairs or groups for statistical comparison.
-    Returns:
-    - - posthoc_list (list): External list to store posthoc result DataFrames. 
-    """
-    
-    #default args
-    fig_suptitle = f"{comparison.replace('_', ' ').replace(' v ', ' & ')}\n stage activity separation"
-    if ylim is None:
-        ylim = [0, 1.5]
-    #main fig
-    plot_params = dict( data = score_df.reset_index("ensemble").loc[comparison,:], 
-                       x = 'ensemble', y =score_type, linestyles= 'none',
-                       palette = color_list, order = ensemble_subset, 
-                        errorbar = ('pi',75),dodge = 0.4, errwidth = 1.25,
-                       hue_order = geno_order,  hue = 'geno_day')
-    sc = sns.pointplot(ax =plot_ax, **plot_params,**kwargs)
-    set_labels(ax =plot_ax, label_dict = {'title': fig_suptitle,
-                                          'xlabel': 'Cell Ensemble', 
-                                          'legend_false': False,
-                                          'ylim': ylim})# set_labels(ax, label_dict= {'title': f"Ensemble: {ensemble}\nCluster density {score_type}",'legend_false':True})
-    ## plot stat annotate
-    posthoc_df = main_run_posthoc_tests_and_get_hue_loc_df(plot_ax, plot_params, 
-                                                           sc, preset_comparison_list,
-                                                           test_name = 'cohen_d',ax_var_is_hue=False,
-                                                           detect_error_bar = True,plot_type='pointplot').assign(comparison=comparison_name)
-    plot_sig_bars_w_comp_df_tight(plot_ax, posthoc_df[posthoc_df['pvalue'] < 0.05], tight_offset = 0.02,offset_constant=0.01) 
-    set_pointplot_edgecolor(plot_ax)
-    #wrap xticks
-    add_xtick_color_boxes(plot_ax, ensemble_subset, stage_palette_dict)
-    plot_ax.set_xticklabels(add_spaces_linebreak_to_stage_ticks(plot_ax.get_xticklabels()))
-     
-    if add_legend:
-        hand, labs =plot_ax.get_legend_handles_labels() #pull legend from final PCA object and delete it
-        plt.gcf().legend(hand, labs, bbox_to_anchor=(0.55, .975),loc = 'lower center', ncols = 4, frameon = False, title =None, **{
-            'labelspacing': 0.0,
-            'markerscale': 1,
-            'borderpad': 0.0,
-            'columnspacing': 0.0,
-            'handletextpad': 0.0})
-               #markerscale=1,fontsize = 5, columnspacing=0.05,labelspacing=0.2,borderpad = 0.1,handletextpad=0.1)
 
-    return posthoc_df
 
 def plot_class_scatter_in_latent(fig, ax_array, df_comparison, compared_col, ens_col, ensemble_subset, comparison,
                                  make_legend = True, samples_to_plot:int = 500, use_stage_colors= True, **kwargs):
