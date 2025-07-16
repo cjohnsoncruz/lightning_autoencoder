@@ -79,15 +79,11 @@ mid_scale_dict = sns_context
 preset_comparison_list = [(geno_order[0], geno_order[1]),
                            (geno_order[1], geno_order[2]),
                              (geno_order[1], geno_order[3])]
-comparison_list_w_WT_CLNZ = [(geno_order_w_WT_CLNZ[0], geno_order_w_WT_CLNZ[1]),
-                             (geno_order_w_WT_CLNZ[0], geno_order_w_WT_CLNZ[2]),
-                             (geno_order_w_WT_CLNZ[2], geno_order_w_WT_CLNZ[3]), 
-                             (geno_order_w_WT_CLNZ[3], geno_order_w_WT_CLNZ[4]),
-                             (geno_order_w_WT_CLNZ[2], geno_order_w_WT_CLNZ[4])]
-# [('WT VEH', 'WT CLNZ'),
-#  ('WT VEH', 'Het VEH'),
-#  ('Het VEH', 'Het CLNZ'),
-#  ('Het CLNZ', 'Het postCLNZ')]
+comparison_list_w_WT_CLNZ = [(geno_order_w_WT_CLNZ[0], geno_order_w_WT_CLNZ[1]), # [('WT VEH', 'WT CLNZ'),
+                             (geno_order_w_WT_CLNZ[0], geno_order_w_WT_CLNZ[2]), #  ('WT VEH', 'Het VEH'),
+                             (geno_order_w_WT_CLNZ[2], geno_order_w_WT_CLNZ[3]), #  ('Het VEH', 'Het CLNZ'),
+                             (geno_order_w_WT_CLNZ[2], geno_order_w_WT_CLNZ[4])] #  ('Het CLNZ', 'Het postCLNZ')]
+
 # elseiver information
 fig_size_dict = {'1_col':single_col_width,'1.5_col':single_half_col_width,'2_col':double_col_width,}## set up col width
 single_col_width = 3.54 #iinches, from website single_col # single_half_col_width = 5.5 #inches # double_col_width = 7.48 #inches
