@@ -4,7 +4,7 @@ A PyTorch Lightning autoencoder for analyzing latent structure in calcium imagin
 
 ## Overview
 
-This project implements an autoencoder architecture using PyTorch Lightning for dimensionality reduction and analysis of neural population activity. The framework supports processing, modeling, and visualization of calcium imaging timeseries data across different task phases and experimental conditions.
+This project implements an autoencoder architecture using PyTorch Lightning for dimensionality reduction and analysis of neural population activity. The framework supports processing, modeling, and visualization of calcium imaging timeseries data across different task phases and experimental conditions. Originally built in 2025 for internal Sohal lab sharing, now hosted on my repo. 
 
 ## Installation
 
