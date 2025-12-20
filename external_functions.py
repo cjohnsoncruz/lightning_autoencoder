@@ -306,8 +306,7 @@ def plot_class_scatter_in_latent(fig, ax_array, df_comparison, compared_col, ens
                                                          'ylabel': 'Latent Dim. 2',
                                                          'xticks':[], 'yticks':[] })    
     ##NEW- 5.9.25- add row title to latent space    #set titles for pseudo congig 
-    row_titles = [f"{e.replace("_", " ")} ensemble: {comparison_clean} latent space" for e, test in zip(
-        ensemble_subset, [comparison_clean,comparison_clean])]
+    row_titles = [f"Latent Space of {e.replace("_", " ")} Ensemble Activity" for e in ensemble_subset]
     add_ax_array_row_title(fig, row_titles, ax_array)
     
     if make_legend:#new- given removal of suptitle, now get text figure
