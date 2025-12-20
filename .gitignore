@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Data files
+*.parquet
+
 # Distribution / packaging
 .Python
 build/
@@ -56,11 +59,16 @@ cover/
 *.mo
 *.pot
 
-#ignore figures etc 
+# Output and generated files
 /output/
-#torch model storage
+
+# Model storage
+/models/
 /torch_model_*/
 /torch_models/
+
+# Archived scripts
+/defunct_scripts/
 
 # Django stuff:
 *.log
