@@ -70,6 +70,9 @@ cover/
 # Archived scripts
 /defunct_scripts/
 
+# Claude context file
+claude.md
+
 # Django stuff:
 *.log
 local_settings.py
