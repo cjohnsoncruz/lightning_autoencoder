@@ -73,6 +73,9 @@ cover/
 # Claude context file
 claude.md
 
+# Service account credentials (sensitive)
+*service_account*.json
+
 # Django stuff:
 *.log
 local_settings.py
