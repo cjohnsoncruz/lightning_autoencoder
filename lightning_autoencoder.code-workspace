@@ -3,10 +3,6 @@
 		{
 			"name": "lightning_autoencoder",
 			"path": "."
-		},
-		{
-			"name": "hiram_CPU",
-			"uri": "colab://m-hm-3m6hrng4z7f7c/"
 		}
 	],
 	"settings": {
