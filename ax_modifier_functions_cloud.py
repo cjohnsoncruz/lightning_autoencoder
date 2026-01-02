@@ -62,10 +62,11 @@ def add_xtick_color_boxes(ax_plot, xtick_order: list, color_palette: dict, **kwa
         })
 
 
-def add_spaces_linebreak_to_stage_ticks(stage_ax_ticks): 
+def add_spaces_linebreak_to_stage_ticks(stage_ax_ticks):
     ''' TO- given a list of ax ticks that consist of task stages with understores, replace the underscores with spaces, then insert a line break char at position 9 (where early IA/RS ends)'''
     labels_w_spaces = [x.get_text().replace("_", " ") for x in stage_ax_ticks]
-    labels_wrapped = [x[:8] + "\n" + x[8:] for x in labels_w_spaces if x not in ["Late IA", "Late RS"]]
+    # Keep "Late IA"/"Late RS" as-is (no line break needed), add line break for longer labels
+    labels_wrapped = [x if x in ["Late IA", "Late RS"] else x[:8] + "\n" + x[8:] for x in labels_w_spaces]
     return labels_wrapped 
 
 def ax_add_stage_names_and_outline_points(ax_obj):

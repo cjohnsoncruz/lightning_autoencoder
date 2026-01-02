@@ -82,6 +82,63 @@ def save_plot_record_as_csv_txt(posthoc_df:pd.DataFrame,
     else:
         print("No text suffix provided, not saving text")
 
+# def save_csv_to_analysis_storage(csv_to_save: pd.DataFrame, csv_name: str, csv_folder_latest = None, csv_folder_current_run= None) -> None:
+#     """
+#     Save a CSV file to both the latest analysis folder and the current run's analysis folder.
+#     """
+#     valid_folders = [f for f in [csv_folder_latest, csv_folder_current_run] if f is not None]
+#     for folder in valid_folders:
+#         os.makedirs(folder, exist_ok=True)
+#         csv_to_save.to_csv(os.path.join(folder, csv_name))
+#         print(f"Saved {csv_name} to {folder}")
+
+
+def write_posthoc_to_txt_clean(posthoc_table: pd.DataFrame, output_file: str) -> None:
+    """
+    Write a posthoc table to a text file, with one comparison per line. New version better aligned with readibility
+    """
+    with open(output_file, "w") as file:
+        for _, row in posthoc_table.iterrows():
+            template = [
+                f"Comparing {row.numeric_var} of groups in {row.category_compared_within} level: " 
+                        f"{row.group_1} {row.group_1_mean:.3f} +/- {row.group_1_sem:.3f}, {row.group_2} {row.group_2_mean:.3f} +/- {row.group_2_sem:.3f}. "
+            f"{row.group_1} vs {row.group_2} {row.test_name} test statistic {row.stat_result[0]:.1f}, p = {row.pvalue:.5f}. {row.group_1} n={row.group_1_n[0]}, {row.group_2} n={row.group_2_n[0]}. full pvalue: {row.pvalue:.3E}\n"]
+
+            file.write(template[0])
+    print(f"Output saved to {output_file}")
+
+
+def write_posthoc_table_to_txt(posthoc_table: pd.DataFrame, output_file: str) -> None:
+    """
+    Write a posthoc table to a text file, with one comparison per line.
+    """
+    with open(output_file, "w") as file:
+        for _, row in posthoc_table.iterrows():
+            fig_num = row['fig_num']
+            comparison      = row["category_compared_within"]
+            numeric_var = row["numeric_var"]
+            axis_var        = row["x_category_var"]
+            g1, g2          = row["group_1"], row["group_2"]
+            # group_n may be a length‐1 sequence; guard against both cases
+            n1 = row["group_1_n"][0] if hasattr(row["group_1_n"], "__getitem__") else row["group_1_n"]
+            n2 = row["group_2_n"][0] if hasattr(row["group_2_n"], "__getitem__") else row["group_2_n"]
+            pval            = row["pvalue"]
+            test            = row.get("test_name", "")
+            stat            = row.get("stat_result", "")
+            mean1, sem1     = row["group_1_mean"], row["group_1_sem"]
+            mean2, sem2     = row["group_2_mean"], row["group_2_sem"]
+            
+            file.write(
+                f"[Fig num: {fig_num}. "
+                f"Posthoc group dimension: {comparison}. "
+                f"X axis categorical variable: {axis_var}. "
+                f"Y variable: {numeric_var}] "
+                f"{g1} {mean1:.3f}+/-{sem1:.3f} vs {g2} {mean2:.3f}+/-{sem2:.3f}. "
+                f"{test} Test Stat={stat[0]:.1f}, p={pval:.5f} (Mean +/- SEM). ({g1} n={n1}, {g2} n={n2}) Full pvalue: {pval}\n"
+            )
+    print(f"Output saved to {output_file}")
+
+
 def get_datetag():
     """Get date tag in format day_month_year"""
     from datetime import datetime
