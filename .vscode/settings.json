@@ -1,4 +1,7 @@
 {
     "colab.serverMounting": true,
-    "colab.uploading": true
+    "colab.uploading": true,
+    "colab.activityBar": true,
+    "colab.driveMounting": true,
+    "colab.logging.level": "trace"
 }

@@ -3,10 +3,10 @@ torch
 # Switch to default PyPI for other packages
 --index-url https://pypi.org/simple
 tensorboard
-seaborn==0.12.1 #0.12.2 has heatmap anntoation bug that hides text
-pandas==1.5.2
+seaborn>=0.13.0 #was ==0.12.1; 0.12.2 had heatmap annotation bug. >=0.13.0 needed for Python 3.12
+pandas>=2.2.0 #was ==1.5.2; >=2.2 needed for Python 3.12 support
 scikit-learn==1.5.2
-matplotlib==3.7.0 #to allow for heatmap proper display
+matplotlib>=3.8.0 #was ==3.7.0; >=3.8 needed for Python 3.12. Test heatmap display
 scipy
 numpy<2
 # datetime is a built-in Python module, no need to install
